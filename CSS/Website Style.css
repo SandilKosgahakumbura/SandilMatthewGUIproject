@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+/*Imported from google fonts Sedan SC regular -s*/
+
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
 h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.UniA{/*Font for text that you dont want forced style on by <a> element */
+    color: black;
+    text-decoration: none;
+    
+}
+
+#searchForm{
+    position:relative;    
+    justify-content: end;
 }
 
