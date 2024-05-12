@@ -3,50 +3,21 @@
 <head>
     <title>SearchBar Test File</title>
     <link rel="stylesheet" href="../CSS/searchBarTestCSS.css">
+    <script src="../JS/SearchBar.js"></script>
+    <script src="../JS/AddEntry.js"></script>
 </head>
 <body>
     <input id ="search">
+    <button id="searchButton" onclick=userSearch()>Search for Archive Entry</button>
+    <p id="nameHolder">Search Placeholder</p>
+    <br>
 
-    <button id="searchButton" onclick=userSearch()>Click me</button>
-
-    <p id="nameHolder">Name Placeholder</p>
-    <p id="URLHolder">URL Placeholder</p>
+    <p>Name:</p>
+    <input id="createName">
+    <p>URL:</p>
+    <input id="createURL">
+    <br><br>
+    <button id="addEntry" onclick="addUserEntry()">Add an entry to The Archive</button>
+    <p>Adding an entry with the same name as an existing one will overwrite that file.</p>
 </body>
-
-<script>
-    //The code will work by using one value to compare two arrays.
-    //eg the value 1 will point to the name "bananas" on the first array and point to the url "bananas.com" on the second array
-
-    const entryName = ["test 1", "test 2", "test 3"];
-    const entryURL = ["other 1", "other 2", "other 3"];
-
-    //aC stands for Array Count
-    let aC = 0;
-    let input = ""; //It's in string form so it can be compared to the arrays
-
-    //Function will prompt user to enter a search value and then compare it to the array
-    function userSearch()
-    {
-        for(aC = 0; aC < entryName.length; aC++)
-        {
-            input = search.value;
-            input = input.toString();
-
-            let currentName = entryName[aC];
-            let currentURL = entryURL[aC];
-            
-            if(input == currentName)
-            {
-                alert("match has been found!");
-                document.getElementById("nameHolder").innerHTML = (currentName);
-                document.getElementById("URLHolder").innerHTML = (currentURL);
-            }
-
-            else
-            {
-                alert("No match was found")
-            }
-        }
-    }
-</script>
 </html>
