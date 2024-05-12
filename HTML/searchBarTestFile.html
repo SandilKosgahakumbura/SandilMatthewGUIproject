@@ -3,15 +3,50 @@
 <head>
     <title>SearchBar Test File</title>
     <link rel="stylesheet" href="../CSS/searchBarTestCSS.css">
-
 </head>
 <body>
-    <input type="search" id ="search">
+    <input id ="search">
 
+    <button id="searchButton" onclick=userSearch()>Click me</button>
 
-    <div class="files">
-        <div class="user">
-        </div>
-    </div>
+    <p id="nameHolder">Name Placeholder</p>
+    <p id="URLHolder">URL Placeholder</p>
 </body>
+
+<script>
+    //The code will work by using one value to compare two arrays.
+    //eg the value 1 will point to the name "bananas" on the first array and point to the url "bananas.com" on the second array
+
+    const entryName = ["test 1", "test 2", "test 3"];
+    const entryURL = ["other 1", "other 2", "other 3"];
+
+    //aC stands for Array Count
+    let aC = 0;
+    let input = ""; //It's in string form so it can be compared to the arrays
+
+    //Function will prompt user to enter a search value and then compare it to the array
+    function userSearch()
+    {
+        for(aC = 0; aC < entryName.length; aC++)
+        {
+            input = search.value;
+            input = input.toString();
+
+            let currentName = entryName[aC];
+            let currentURL = entryURL[aC];
+            
+            if(input == currentName)
+            {
+                alert("match has been found!");
+                document.getElementById("nameHolder").innerHTML = (currentName);
+                document.getElementById("URLHolder").innerHTML = (currentURL);
+            }
+
+            else
+            {
+                alert("No match was found")
+            }
+        }
+    }
+</script>
 </html>
