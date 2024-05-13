@@ -1,3 +1,4 @@
+<!--Everything done here is done by sandil o7-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +13,9 @@
 <body class="bg-secondary-subtle">
     
     <!--Wesbite Head for all webpages-->
-
-    <div id="heading">
+    <div id="heading" class="bg-secondary-subtle">
         <!--Heading stuff-->
         <h1 class="sedan-sc-regular">The Archive</h1>
-        <hr>
         <!--Navbar using bootstrap!!-->
         <div role="navigation" class="navbar navbar-expand-lg bg-secondary">
 
@@ -25,22 +24,22 @@
             Home Page
             </a>
 
-            <div class="container-fluid position-flex">
+            <div class="container-fluid d-flex justify-content-even">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active UniA" href="#" aria-current="page">Home</a></li>
 
-                    <li class="nav-item"><a class="nav-link active UniA" href="#" >Entries</a></li>
+                    <li class="nav-item"><a class="nav-link active UniA" href="#">Entries</a></li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documents</a>
+                        <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documents</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item UniA" href="#">New Document</a></li>
                             <li><a class="dropdown-item UniA" href="#">Edit Document</a></li>
-                            <li><a class="dropdown-item UniA" href="#">Check History</a></li>
+                            <li><a class="dropdown-item UniA " href="#">Check History</a></li>
                         </ul>
                     </li>
                                        
-                    <form class="d-flex searchForm" role="search"> 
+                    <form class="d-flex" role="search"> 
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-dark UniA" type="submit">Search</button>
                     </form>
@@ -48,8 +47,80 @@
             </div>
         </div>
     </div>
-  
+    <!--Heading end-->
+    <!--body start-->
+    <!--Integrate a css grid into a bootstrap grid and to achieve a more organic text block across two lanes on the page-->
+    <div class="container bodyd mt-2">
+        <div class="row">
+            <div class="col">
+                <div class="grid-container">
+                    <div class="grid-item gridHeading span_2">
+                        <p class="headText h3 ms-2 mb-0">Latest Documents</p>
+                        <hr class="mt-0 ms-2" style="width: 240px;">
+                    </div>
+                    <div class="grid-item me-1">
+                        <ul class="h6">
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document1">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document2">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document3">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document4">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document5">Document</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-item ms-1">
+                        <ul class="h6">
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document6">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document7">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document8">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document9">Document</a></li>
+                            <li class="LaDocLi"><a href="#" class="UniA" id="document10">Document</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-item span_2">
+                        <p class="HeadText h3 ms-2 mb-0 headText" id="documentName1mp">Document name</p>
+                        <hr class="mt-0 ms-2" style="width: 240px;">
+                    </div >
+                    <div class="grid-item span_2">
+                        <p class="bodyText" id="documentText1mp"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                    <div class="grid-container_2">
+                            <div class="grid-item_2">
+                                <p class="HeadText h3 ms-2 mb-0 headText" id="documentName2mp">Document name</p>
+                                <hr class="mt-0 ms-2" style="width: 240px;">
+                            </div>
+                            <div class="grid-item_2">
+                                <p class="bodyText" id="documentText2mp"></p>
+                            </div>
+                            <div class="grid-item_2">
+                                
+                            </div>
+                            <div class="grid-item_2">
+                                
+                            </div>
+                            <div class="grid-item_2">
+                                
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!--Body end-->
+    <script>
+        var documentText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla justo ut pellentesque euismod. Donec vitae malesuada orci. Proin vitae faucibus nisi. Fusce blandit, nisi sed congue pulvinar, purus odio sollicitudin erat, quis laoreet sapien arcu eget sapien. Ut maximus nibh imperdiet, rutrum magna sodales, condimentum elit. Aliquam et purus feugiat, dapibus arcu ornare, mattis quam. Suspendisse potenti. Donec nisi felis, placerat at sapien eget, blandit facilisis urna. In tempus, nisi laoreet cursus elementum, mauris urna rutrum magna, et commodo erat odio quis felis. Nullam pellentesque gravida est quis feugiat. Sed vitae pulvinar nisi, id venenatis justo. Sed ornare imperdiet nibh, in molestie tortor ultrices sed. Vestibulum ipsum est, auctor quis urna sit amet, convallis aliquam nisl. Nulla eget neque est. Morbi in eleifend tellus.";
+        var documentName = "Lorem Ipsum";
+        
+        /*Shortens text to correct size that will fit the box*/
+        var lengthLimitStr = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla justo ut pellentesque euismod. Donec vitae malesuada orci. Proin vitae faucibus nisi. Fusce blandit, nisi sed congue pulvinar, purus odio sollicitudin erat, quis laoreet sapien arcu eget sapien. Ut maximus nibh imperdiet, rutrum magna sodales, condimentum elit. Aliquam et purus feugiat, dapibus arcu ornare, mattis quam. Suspendisse potenti. Donec nisi felis, placerat at sapien eget, blandit facilisis";
+        var lengthLimit = lengthLimitStr.length;
+        var shortenedText = documentText.slice(0, lengthLimit - 3) + "...";// "..." to indicate more text is available to view
 
+        
+        document.getElementById("documentName1mp").innerHTML = documentName;
+        document.getElementById("documentText1mp").innerHTML = shortenedText;
+    </script>
  
     <!--Boostrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
