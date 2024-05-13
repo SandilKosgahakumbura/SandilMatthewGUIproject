@@ -3,8 +3,8 @@
 //eg the value 1 will point to the name "bananas" on the first array and point to the url "bananas.com" on the second array
 //if I could go back and do it differently with my now increased knowlege of javascript, I would instead use something like {bananas.name = "", bananas.url = ""}, but I did not know of this before my code was almost finished.
 
-const entryName = ["Test 1", "Test 2", "Test 3"];
-const entryURL = ["../Archive Entries (HTML)/Test Entry 1.html", "../Archive Entries (HTML)/Test Entry 2.html", "../Archive Entries (HTML)/Test Entry 3.html"];
+const entryName = ["Central Processing Unit (CPU)", "Graphics Card (GPU)", "Headphones", "PC (Personal Computer)", "Lego", "Jerma985", "Hatsune Miku", "Chemistry", "Physics", "Biology", "Science", "Video Game", "Pokemon", "Dark Souls", "Black-Billed Magpie", "Razorbill", "Turkey Vulture", "The Eastern Kingbird", "Common Raven", "Archive of Our Own (ao3)"];
+const entryURL = ["../Archive Entries (HTML)/Document1.html", "../Archive Entries (HTML)/Document2.html", "../Archive Entries (HTML)/Document3.html", "../Archive Entries (HTML)/Document4.html", "../Archive Entries (HTML)/Document5.html", "../Archive Entries (HTML)/Document6.html", "../Archive Entries (HTML)/Document7.html", "../Archive Entries (HTML)/Document8.html", "../Archive Entries (HTML)/Document9.html", "../Archive Entries (HTML)/Document10.html", "../Archive Entries (HTML)/Document11.html", "../Archive Entries (HTML)/Document12.html", "../Archive Entries (HTML)/Document13.html", "../Archive Entries (HTML)/Document14.html", "../Archive Entries (HTML)/Document15.html", "../Archive Entries (HTML)/Document16.html", "../Archive Entries (HTML)/Document17.html", "../Archive Entries (HTML)/Document18.html", "../Archive Entries (HTML)/Document19.html", "../Archive Entries (HTML)/Document20.html", ];
 const cutArrayName = [];
 const cutArrayURL = [];
 
