@@ -19,7 +19,7 @@ function userSearch()
     document.getElementById("nameHolder").innerHTML = "";
     cutResult = "";
 
-    //Reset arrays to prevent stacking of results
+    //Reset arrays to prevent stacking of results on repeat search
     cutArrayName.length = 0;
     cutArrayURL.length = 0;
 
@@ -49,11 +49,12 @@ function userSearch()
         //When the loop reaches the end of its lifespan, this code is executed. It adds all the names/links together and displays them for the user.
         if(aC <= entryName.length)
             {
+                cutResult = "Search Results:" + '<br>';
                 for(cutLoop = 0; cutLoop < cutArrayName.length; cutLoop++)
                 {
                     cutName = cutArrayName[cutLoop];
                     cutURL = cutArrayURL[cutLoop];
-                    cutResult += '<br><a href="' + cutURL + '">' + cutName + '</a>';
+                    cutResult += '<a href="' + cutURL + '">' + cutName + '</a><br>';
                 }
 
                 cutArrayName.forEach(function(item) {
