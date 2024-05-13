@@ -11,10 +11,18 @@ const cutArrayURL = [];
 //aC stands for Array Count
 let aC = 0;
 let input = ""; //It's in string form so it can be compared to the arrays
+let cutResult = "";
 
 //Function will prompt user to enter a search value and then compare it to the array
 function userSearch()
 {
+    document.getElementById("nameHolder").innerHTML = "";
+    cutResult = "";
+
+    //Reset arrays to prevent stacking of results
+    cutArrayName.length = 0;
+    cutArrayURL.length = 0;
+
     for(aC = 0; aC < entryName.length; aC++)
     {
         //input value imported from html, made case insensitive with rest of code
@@ -36,7 +44,7 @@ function userSearch()
             cutArrayURL.push(currentURL);
         }
 
-        let cutResult = "";
+        cutResult = "";
         
         //When the loop reaches the end of its lifespan, this code is executed. It adds all the names/links together and displays them for the user.
         if(aC <= entryName.length)
@@ -54,8 +62,6 @@ function userSearch()
             }
         
         document.getElementById("nameHolder").innerHTML = cutResult;
-
-        //It may not seem like much, but I believe this the most amount of effort of outside the box thinking I've had to do for coding.
         
         //This is the old testing code
         /*
