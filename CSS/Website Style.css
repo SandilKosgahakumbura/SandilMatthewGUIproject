@@ -36,6 +36,7 @@ p{
 
 
 .grid-container{
+    border: black 1px solid;
     margin: 1px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,10 +46,12 @@ p{
 }
 
 .grid-item{
+    border: black 1px solid;
     margin-top: 2px;
 }
 
 .grid-container_2{
+    border: black 1px solid;
     margin: 1px;
     display: grid;
     grid-template-columns: 1fr;
@@ -58,6 +61,7 @@ p{
 }
 .grid-item_2{
     margin-top: 2px;
+    border: black 1px solid;
 }
 
 
