@@ -22,8 +22,69 @@ p{
     
 }
 
-#searchForm{
-    position:relative;    
-    justify-content: end;
+#heading{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/*Body of Web page*/
+.bodyd{
+    width: 60%;
+    margin: auto;
+}
+
+
+.grid-container{
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 300px 40px 300px 40px 300px 40px 300px;
+    width: 100%;
+    height: 1000px;
+}
+
+.grid-item{
+    margin-top: 2px;
+}
+
+.grid-container_2{
+    margin: 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 300px 40px 300px 40px 300px 40px 300px;
+    width: 100%;
+    height: 1000px;
+}
+.grid-item_2{
+    margin-top: 2px;
+}
+
+
+.gridHeading{
+    color:black;
+}
+
+/*Head and body text fonts*/
+.headText{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+}
+
+.bodyText{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+.span_2{
+    grid-column: span 2;
+}
+
+.LaDocLi{
+    margin: 10px;
+}
+
+.LaDocLi a:hover{
+    color: lightgrey;
 }
 
