@@ -21,7 +21,7 @@ p{
     
 }
 
-#heading{
+#heading{/*This makes sure the header bar maintains its position at the top of the website*/
     position: sticky;
     top: 0;
     z-index: 999;
